@@ -31,7 +31,7 @@ const Projects = () => {
                 alt={t(project.titleKey, project.title)}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
+              <div className="absolute inset-0 bg-primary/20 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
                 {project.url && (
                   <a href={project.url} target="_blank" rel="noreferrer" className="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
                     <ExternalLink size={20} />

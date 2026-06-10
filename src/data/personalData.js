@@ -112,22 +112,22 @@ export const personalData = {
       image: "https://placehold.co/600x400/0B0B0F/8B5CF6?text=Ulm+Care"
     },
     {
-      titleKey: "project_surgi_expo_title",
-      title: "Surgi Expo",
-      tech: ["React.js", "Bootstrap", "Axios"],
-      descriptionKey: "project_surgi_expo_description",
-      description: "International export website displaying medical products and company services.",
-      url: "https://surgi-expo.com/",
-      github: "https://github.com/NAFADYY/surgi-expo-final",
-      image: "https://placehold.co/600x400/0B0B0F/8B5CF6?text=Surgi+Expo"
+      titleKey: "project_certiverify_title",
+      title: "CertiVerify",
+      tech: ["React.js", "Tailwind CSS", "Redux", "Axios"],
+      descriptionKey: "project_certiverify_description",
+      description: "A certificate verification system for the Faculty of Engineering, Al-Azhar University. Allows administrators to manage users, track certificate creation stats, apply watermarks, and scan QR codes for verification.",
+      url: "http://76.13.55.204:3001/login",
+      image: "https://placehold.co/600x400/0B0B0F/8B5CF6?text=CertiVerify"
     },
     {
-      titleKey: "project_marina_clinic_title",
-      title: "Marina Clinic System",
-      tech: ["React.js", "Tailwind CSS", "Axios"],
-      descriptionKey: "project_marina_clinic_description",
-      description: "Clinic management dashboard for scheduling, finance, and administration.",
-      image: "https://placehold.co/600x400/0B0B0F/8B5CF6?text=Marina+Clinic"
+      titleKey: "project_quality_of_visions_title",
+      title: "Quality of visions",
+      tech: ["React.js", "Tailwind CSS", "Redux", "Axios"],
+      descriptionKey: "project_quality_of_visions_description",
+      description: "A complex academic and quality assurance dashboard designed for educational institutions to manage programs, courses, regulations, standards, self-study processes, and generate reports.",
+      url: "http://76.13.55.204:5000/",
+      image: "https://placehold.co/600x400/0B0B0F/8B5CF6?text=Quality+of+visions"
     }
   ],
   services: [
