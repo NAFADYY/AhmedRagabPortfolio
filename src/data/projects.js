@@ -218,7 +218,7 @@ export const projects = [
       },
     ],
     tech: ['React.js', 'Tailwind CSS', 'REST API', 'i18next'],
-    liveUrl: null,
+    liveUrl: 'https://azhar-test.com/',
     githubUrl: null,
     screenshots: makeShots('al-azhar-website', 8, 'Al-Azhar University Website', 'موقع جامعة الأزهر'),
   },
