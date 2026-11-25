@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0D12"/>
+      <stop offset="100%" stop-color="#151924"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="82%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#F5F5F2" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <rect width="1280" height="800" fill="url(#grid)"/>
+  <rect width="1280" height="800" fill="url(#glow)"/>
+  <rect x="72" y="64" width="1136" height="672" rx="22" fill="#11141C" stroke="#F5F5F2" stroke-opacity="0.12" stroke-width="1.5"/>
+  <line x1="72" y1="116" x2="1208" y2="116" stroke="#F5F5F2" stroke-opacity="0.08"/>
+  <circle cx="106" cy="90" r="6" fill="#F5F5F2" fill-opacity="0.22"/>
+  <circle cx="126" cy="90" r="6" fill="#F5F5F2" fill-opacity="0.22"/>
+  <circle cx="146" cy="90" r="6" fill="#F5F5F2" fill-opacity="0.22"/>
+  <rect x="440" y="77" width="400" height="26" rx="13" fill="#181C26" stroke="#F5F5F2" stroke-opacity="0.08"/>
+  <text x="640" y="94" fill="#9299A8" font-family="monospace" font-size="12" text-anchor="middle">newulm-dashboard · view 01</text>
+  <rect x="96" y="140" width="220" height="572" rx="14" fill="#151923" stroke="#F5F5F2" stroke-opacity="0.06"/>
+  <rect x="118" y="168" width="110" height="14" rx="7" fill="#6366F1" fill-opacity="0.85"/>
+  <rect x="118" y="212" width="176" height="34" rx="9" fill="#6366F1" fill-opacity="0.16" stroke="#6366F1" stroke-opacity="0.4"/>
+  <rect x="118" y="260" width="152" height="12" rx="6" fill="#F5F5F2" fill-opacity="0.12"/>
+  <rect x="118" y="294" width="132" height="12" rx="6" fill="#F5F5F2" fill-opacity="0.1"/>
+  <rect x="118" y="328" width="164" height="12" rx="6" fill="#F5F5F2" fill-opacity="0.1"/>
+  <rect x="118" y="362" width="120" height="12" rx="6" fill="#F5F5F2" fill-opacity="0.08"/>
+  <rect x="340" y="140" width="270" height="120" rx="14" fill="#151923" stroke="#F5F5F2" stroke-opacity="0.07"/>
+  <rect x="630" y="140" width="270" height="120" rx="14" fill="#151923" stroke="#F5F5F2" stroke-opacity="0.07"/>
+  <rect x="920" y="140" width="264" height="120" rx="14" fill="#151923" stroke="#F5F5F2" stroke-opacity="0.07"/>
+  <rect x="364" y="168" width="80" height="10" rx="5" fill="#9299A8" fill-opacity="0.45"/>
+  <rect x="364" y="194" width="130" height="24" rx="8" fill="#6366F1" fill-opacity="0.7"/>
+  <rect x="654" y="168" width="90" height="10" rx="5" fill="#9299A8" fill-opacity="0.45"/>
+  <rect x="654" y="194" width="110" height="24" rx="8" fill="#22D3EE" fill-opacity="0.65"/>
+  <rect x="944" y="168" width="74" height="10" rx="5" fill="#9299A8" fill-opacity="0.45"/>
+  <rect x="944" y="194" width="140" height="24" rx="8" fill="#F5F5F2" fill-opacity="0.18"/>
+  <rect x="340" y="284" width="844" height="428" rx="16" fill="#151923" stroke="#F5F5F2" stroke-opacity="0.09"/>
+  <rect x="340" y="284" width="844" height="4" rx="2" fill="#6366F1"/>
+  <text x="762" y="452" fill="#F5F5F2" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" text-anchor="middle">Newulm Dashboard</text>
+  <text x="762" y="496" fill="#22D3EE" font-family="monospace" font-size="18" text-anchor="middle">Healthcare Operations Panel</text>
+  <rect x="522" y="534" width="480" height="36" rx="18" fill="#0B0D12" stroke="#F5F5F2" stroke-opacity="0.14"/>
+  <text x="762" y="557" fill="#9299A8" font-family="monospace" font-size="12" text-anchor="middle">TEMPORARY PREVIEW · ADD SCREENSHOT TO public/projects/newulm-dashboard/</text>
+</svg>

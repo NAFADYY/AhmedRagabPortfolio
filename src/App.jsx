@@ -1,52 +1,35 @@
-import React, { useState } from 'react';
-import MainLayout from './layouts/MainLayout';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Resume from './components/Resume';
-import Projects from './components/Projects';
-import Certificates from './components/Certificates';
-import Services from './components/Services';
-import Tools from './components/Tools';
-import FAQ from './components/FAQ';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import CursorGlow from './components/CursorGlow';
-import LoadingScreen from './components/LoadingScreen';
-import ScrollToTop from './components/ScrollToTop';
-import { AnimatePresence } from 'framer-motion';
+import { Suspense, lazy } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { MotionConfig } from 'framer-motion';
+import Layout from './components/layout/Layout';
+import HomePage from './pages/Home/HomePage';
+
+const ProjectsPage = lazy(() => import('./pages/Projects/ProjectsPage'));
+const ProjectDetailsPage = lazy(() => import('./pages/ProjectDetails/ProjectDetailsPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFound/NotFoundPage'));
+
+const PageFallback = () => (
+  <div className="container-x flex min-h-[60vh] items-center justify-center">
+    <div className="h-8 w-8 animate-spin rounded-full border-2 border-line-strong border-t-accent" aria-label="Loading" />
+  </div>
+);
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
   return (
-    <>
-      <AnimatePresence>
-        {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
-      </AnimatePresence>
-      
-      {!loading && (
-        <MainLayout>
-          <CursorGlow />
-          <ScrollToTop />
-          <div className="flex flex-col gap-24">
-            <Hero />
-            <About />
-            <Skills />
-            <Experience />
-            <Resume />
-            <Projects />
-            <Certificates />
-            <Services />
-            <Tools />
-            <FAQ />
-            <Contact />
-            <Footer />
-          </div>
-        </MainLayout>
-      )}
-    </>
+    <MotionConfig reducedMotion="user">
+      <BrowserRouter>
+        <Layout>
+          <Suspense fallback={<PageFallback />}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/projects/:slug" element={<ProjectDetailsPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </Suspense>
+        </Layout>
+      </BrowserRouter>
+    </MotionConfig>
   );
 }
 
